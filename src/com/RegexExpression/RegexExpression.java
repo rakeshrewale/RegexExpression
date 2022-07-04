@@ -11,8 +11,7 @@ public class RegexExpression {
 
 	public static void main(String[] args) {
 
-        String pattern  = "^[a-zA-Z]+([_+-.][a-zA-Z])*[@][a-zA-Z]+[.][a-z]{2,3}([.][a-zA-Z]{2})*$";
-
+        String pattern  = "^(91)[-.+]{1}[1-9]{1}[0-9]{9}$";
 
 		Scanner scanner = new Scanner(System.in);
 		System.out.print("Please Enter Last name:=");
