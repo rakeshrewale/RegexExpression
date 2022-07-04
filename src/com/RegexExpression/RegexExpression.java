@@ -6,13 +6,13 @@ import java.util.regex.Pattern;
 public class RegexExpression {
 
 	static boolean validate(String pattern, String text) {
-		
+
 		return Pattern.compile(pattern).matcher(text).matches();
 	}
 
 	public static void main(String[] args) {
 
-		String pattern = "^[a-zA-Z0-9]{8,}$";
+		String pattern = "^[A-Z]{1}[a-zA-Z0-9]{1,}[!@#$%^&]{1,}[a-zA-Z0-9]{1,}$";
 
 		Scanner scanner = new Scanner(System.in);
 		System.out.print("Please Enter value:=");
