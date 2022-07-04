@@ -6,15 +6,16 @@ import java.util.regex.Pattern;
 public class RegexExpression {
 
 	static boolean validate(String pattern, String text) {
+		
 		return Pattern.compile(pattern).matcher(text).matches();
 	}
 
 	public static void main(String[] args) {
 
-        String pattern  = "^(91)[-.+]{1}[1-9]{1}[0-9]{9}$";
+		String pattern = "^[a-zA-Z0-9]{8,}$";
 
 		Scanner scanner = new Scanner(System.in);
-		System.out.print("Please Enter Last name:=");
+		System.out.print("Please Enter value:=");
 
 		String lastName = scanner.next();
 
